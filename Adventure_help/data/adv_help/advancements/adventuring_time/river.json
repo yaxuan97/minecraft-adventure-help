@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:clay_ball"
+		},
+		"title": "河流",
+		"description": "河流(river)是细长的、由水组成的生物群系，像现实中的河一般弯曲，在主世界生成频繁。它们通常分隔开两个不同的生物群系，偶尔也会把一个生物群系一分为二",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:river"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"river"
+		]
+	]
+}

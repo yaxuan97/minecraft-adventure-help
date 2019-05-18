@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:bred_all_animals/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:llama_spawn_egg"
+		},
+		"title": "繁殖所有动物：羊驼",
+		"description": "繁殖羊驼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"llama": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:llama"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"llama"
+		]
+	]
+}

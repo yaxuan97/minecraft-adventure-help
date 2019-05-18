@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/savanna",
+	"display": {
+		"icon": {
+			"item": "minecraft:acacia_wood"
+		},
+		"title": "热带高原",
+		"description": "热带高原(Savanna Plateau)海拔约30米。高原的顶部类似于普通的热带草原",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"savanna_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:savanna_plateau"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"savanna_plateau"
+		]
+	]
+}

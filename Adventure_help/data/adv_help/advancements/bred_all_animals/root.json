@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot"
+        },
+        "title": "进度帮助：繁殖每种动物",
+        "description": "帮助您完成进度：繁殖每种动物！",
+        "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+    "criteria": {
+        "baa_help_start": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {}
+        }
+	},
+	"requirements": [
+		[
+			"baa_help_start"
+		]
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:spruce_logs"
+		},
+		"title": "针叶林",
+		"description": "(Taiga)只有云杉可以在针叶林中生长。狼、狐狸和甜浆果丛能在针叶林生成",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"Taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:Taiga"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"Taiga"
+		]
+	]
+}

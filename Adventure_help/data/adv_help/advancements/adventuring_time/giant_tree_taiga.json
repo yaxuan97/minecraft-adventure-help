@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/taiga",
+	"display": {
+		"icon": {
+			"item": "minecraft:spruce_leaves"
+		},
+		"title": "巨型针叶林",
+		"description": "(Giant Tree Taiga)大型的2x2云杉树这里生长，它们比普通的云杉树高得多。地形相当平坦，但大部分的草地被大片的灰化土和砂土所取代",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"giant_tree_taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:giant_tree_taiga"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"giant_tree_taiga"
+		]
+	]
+}

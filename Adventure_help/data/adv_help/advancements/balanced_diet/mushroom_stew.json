@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:mushroom_stew"
+		},
+		"title": "蘑菇煲",
+		"description": "吃下一个蘑菇煲",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mushroom_stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:mushroom_stew"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mushroom_stew"
+		]
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:sand"
+		},
+		"title": "沙滩",
+		"description": "沙滩(Beach)是大陆到海洋的一种过渡生物群系",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"beach": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:beach"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"beach"
+		]
+	]
+}

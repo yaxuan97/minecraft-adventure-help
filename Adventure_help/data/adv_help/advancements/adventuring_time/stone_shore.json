@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/beach",
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": "石岸",
+		"description": "石岸(Stone Shore)连接着山地与海洋。它们完全由石头制成，带有一些沙砾区域，并且通常会陡峭地落入下面的水中",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"stone_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:stone_shore"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"stone_shore"
+		]
+	]
+}

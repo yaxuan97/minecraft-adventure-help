@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/cod",
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_cod"
+		},
+		"title": "烤鳕鱼",
+		"description": "吃下一个烤鳕鱼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cooked_cod": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_cod"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cooked_cod"
+		]
+	]
+}

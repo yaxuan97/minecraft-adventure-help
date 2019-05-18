@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_log"
+		},
+		"title": "森林",
+		"description": "森林(forest)群系的一大特点是在其绵延的地形中有大量的橡树与白桦",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"forest"
+		]
+	]
+}

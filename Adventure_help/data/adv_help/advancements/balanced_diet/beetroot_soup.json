@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/beetroot",
+	"display": {
+		"icon": {
+			"item": "minecraft:beetroot_soup"
+		},
+		"title": "甜菜根",
+		"description": "吃下一个甜菜根",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"beetroot_soup": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:beetroot_soup"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"beetroot_soup"
+		]
+	]
+}

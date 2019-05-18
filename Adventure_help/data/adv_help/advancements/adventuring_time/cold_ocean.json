@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/ocean",
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title": "冷水海洋",
+		"description": "冷水海洋(Cold Ocean)表面呈现深的靛蓝色。鳕鱼可能会在这里生成",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cold_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:cold_ocean"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cold_ocean"
+		]
+	]
+}

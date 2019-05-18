@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/ocean",
+	"display": {
+		"icon": {
+			"item": "minecraft:kelp"
+		},
+		"title": "温水海洋",
+		"description": "温水海洋(Lukewarm Ocean)表面呈浅青色。它包含海带和海草，热带鱼和河豚可能会在这里生成",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"lukewarm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:lukewarm_ocean"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"lukewarm_ocean"
+		]
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/beef",
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_beef"
+		},
+		"title": "牛排",
+		"description": "吃下一个牛排",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cooked_beef": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_beef"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cooked_beef"
+		]
+	]
+}

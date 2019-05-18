@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:pumpkin_pie"
+		},
+		"title": "南瓜派",
+		"description": "吃下一个南瓜派",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"pumpkin_pie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:pumpkin_pie"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"pumpkin_pie"
+		]
+	]
+}

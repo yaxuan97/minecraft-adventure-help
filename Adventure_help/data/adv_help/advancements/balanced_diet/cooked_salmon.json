@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/salmon",
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_salmon"
+		},
+		"title": "烤鲑鱼",
+		"description": "吃下一个烤鲑鱼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cooked_salmon": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_salmon"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cooked_salmon"
+		]
+	]
+}

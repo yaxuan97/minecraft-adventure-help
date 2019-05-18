@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:salmon"
+		},
+		"title": "小丑鱼",
+		"description": "吃下一个小丑鱼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"salmon": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:salmon"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"salmon"
+		]
+	]
+}

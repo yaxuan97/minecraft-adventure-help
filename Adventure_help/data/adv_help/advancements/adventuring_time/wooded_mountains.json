@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/mountains",
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": "繁茂的山地",
+		"description": "繁茂的山地(Wooded Mountains)比普通山地的海拔高得多。云杉和橡树生成更多，形成一个小森林或小树林",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"wooded_mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:wooded_mountains"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wooded_mountains"
+		]
+	]
+}

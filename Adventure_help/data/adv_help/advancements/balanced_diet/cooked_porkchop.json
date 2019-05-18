@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/porkchop",
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_porkchop"
+		},
+		"title": "熟猪排",
+		"description": "吃下一个熟猪排",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cooked_porkchop": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_porkchop"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cooked_porkchop"
+		]
+	]
+}

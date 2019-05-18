@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:bred_all_animals/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cow_spawn_egg"
+		},
+		"title": "繁殖所有动物：牛",
+		"description": "繁殖牛",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cow": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:cow"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cow"
+		]
+	]
+}

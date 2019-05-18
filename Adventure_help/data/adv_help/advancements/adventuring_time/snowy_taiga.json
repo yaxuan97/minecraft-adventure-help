@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/taiga",
+	"display": {
+		"icon": {
+			"item": "minecraft:snow"
+		},
+		"title": "积雪的针叶林",
+		"description": "积雪的针叶林(Snowy Taiga)与针叶林主要的区别是几乎覆盖整个地形的雪",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"snowy_taiga": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_taiga"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"snowy_taiga"
+		]
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/apple",
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_apple"
+		},
+		"title": "金苹果",
+		"description": "吃下一个金苹果",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"golden_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:golden_apple"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"golden_apple"
+		]
+	]
+}

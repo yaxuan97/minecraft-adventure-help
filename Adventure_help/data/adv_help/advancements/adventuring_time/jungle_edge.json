@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/jungle",
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_leaves"
+		},
+		"title": "丛林边缘",
+		"description": "丛林边缘(Jungle Edge)作为其他生物群系与丛林的过渡。树木比主干丛林的密度低得多。草仍然呈现出非常鲜艳的绿色，与主干丛林相同",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"jungle_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:jungle_edge"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"jungle_edge"
+		]
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/potato",
+	"display": {
+		"icon": {
+			"item": "minecraft:baked_potato"
+		},
+		"title": "烤马铃薯",
+		"description": "吃下一个烤马铃薯",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"baked_potato": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:baked_potato"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"baked_potato"
+		]
+	]
+}

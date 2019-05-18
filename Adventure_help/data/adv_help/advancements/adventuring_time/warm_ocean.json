@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/ocean",
+	"display": {
+		"icon": {
+			"item": "minecraft:brain_coral_block"
+		},
+		"title": "暖水海洋",
+		"description": "暖水海洋(Warm Ocean)表面呈浅绿色。暖水海洋有大珊瑚礁和许多海泡菜，虽然海带不会在这里生长",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"warm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:warm_ocean"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"warm_ocean"
+		]
+	]
+}

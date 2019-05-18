@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:kill_all_mobs/root",
+	"display": {
+	  "icon": {
+		"item": "minecraft:magma_cube_spawn_egg"
+	  },
+	  "title": "怪物狩猎：岩浆怪",
+	  "description": "杀死一只岩浆怪",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"criteria": {
+	  "magma_cube": {
+		"trigger": "minecraft:player_killed_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:magma_cube"
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"magma_cube"
+	  ]
+	]
+  }

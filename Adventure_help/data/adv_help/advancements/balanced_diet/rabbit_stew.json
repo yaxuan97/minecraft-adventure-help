@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/cooked_rabbit",
+	"display": {
+		"icon": {
+			"item": "minecraft:rabbit_stew"
+		},
+		"title": "兔肉煲",
+		"description": "吃下一个兔肉煲",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"rabbit_stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:rabbit_stew"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"rabbit_stew"
+		]
+	]
+}

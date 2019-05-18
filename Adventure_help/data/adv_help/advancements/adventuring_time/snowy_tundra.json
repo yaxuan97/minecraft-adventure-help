@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:snow_block"
+		},
+		"title": "积雪的冻原",
+		"description": "积雪的冻原(Snowy Tundra)是一个相对广阔、平坦、大量覆雪的少见生物群系。这里生成的骷髅可能是流浪者，射出带有迟缓效果的箭",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"snowy_tundra": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_tundra"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"snowy_tundra"
+		]
+	]
+}

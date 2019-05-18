@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/badlands",
+	"display": {
+		"icon": {
+			"item": "minecraft:red_sand"
+		},
+		"title": "恶地高原",
+		"description": "恶地高原的海拔比恶地更高，并且顶部平坦，覆盖枯萎的灌木",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"badlands_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:badlands_plateau"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"badlands_plateau"
+		]
+	]
+}

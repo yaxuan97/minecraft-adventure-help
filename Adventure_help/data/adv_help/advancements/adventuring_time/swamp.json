@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:blue_orchid"
+		},
+		"title": "沼泽",
+		"description": "沼泽(swamp)是低洼、潮湿的生物群系。其海拔通常降低到海平面以下。在沼泽里的水呈现出非常暗、深的绿色",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"swamp": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:swamp"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"swamp"
+		]
+	]
+}

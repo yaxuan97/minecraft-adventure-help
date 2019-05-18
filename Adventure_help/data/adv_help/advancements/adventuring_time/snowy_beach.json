@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/beach",
+	"display": {
+		"icon": {
+			"item": "minecraft:snow"
+		},
+		"title": "积雪的沙滩",
+		"description": "积雪的沙滩(Snowy Beach)类似于普通的沙滩，主要由沙子制成，完全被雪覆盖。由于寒冷的气温，周围的水冻结成冰",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"snowy_beach": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_beach"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"snowy_beach"
+		]
+	]
+}

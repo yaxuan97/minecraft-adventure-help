@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/badlands_plateau",
+	"display": {
+		"icon": {
+			"item": "minecraft:red_sand"
+		},
+		"title": "繁茂的恶地高原",
+		"description": "繁茂的恶地高原(Wooded Badlands Plateau)和一般的恶地高原类似，但是顶层有草方块和砂土，甚至有橡树生长。草和橡树显示为无力的棕绿色，充满死寂",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"wooded_badlands_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:wooded_badlands_plateau"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wooded_badlands_plateau"
+		]
+	]
+}

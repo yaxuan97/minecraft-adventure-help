@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/snowy_tundra",
+	"display": {
+		"icon": {
+			"item": "minecraft:ice"
+		},
+		"title": "雪山",
+		"description": "雪山(Snowy Mountains)是比积雪的冻原更高的生物群系",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"snowy_mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:snowy_mountains"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"snowy_mountains"
+		]
+	]
+}

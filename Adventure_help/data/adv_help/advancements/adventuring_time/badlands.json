@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:red_sand"
+		},
+		"title": "恶地",
+		"description": "恶地(badlands)曾被称为平顶山(mesa)，由红沙地层和大量陶瓦构成，并且形成不同的色彩。金矿石可以生成在y=79处，而非32，并且有很高的概率生成，所以恶地有丰富的金矿资源",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"badlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:badlands"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"badlands"
+		]
+	]
+}

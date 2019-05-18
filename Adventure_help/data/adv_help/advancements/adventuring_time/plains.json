@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:grass_block"
+		},
+		"title": "平原",
+		"description": "平原(plains)生物群系大多数是平坦的，高度只有一些有限而渐进的变化。平原的表面被草与高草覆盖",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"plains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:plains"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"plains"
+		]
+	]
+}

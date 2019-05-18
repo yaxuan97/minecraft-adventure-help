@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cookie"
+		},
+		"title": "趣多多",
+		"description": "吃下一个曲奇饼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cookie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cookie"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cookie"
+		]
+	]
+}

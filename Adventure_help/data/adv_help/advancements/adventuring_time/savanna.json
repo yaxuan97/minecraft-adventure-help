@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:acacia_log"
+		},
+		"title": "热带草原",
+		"description": "热带草原(savanna)是相对平坦的生物群系，与草原生物群系非常相似。这是金合欢树自然生成的唯一地方",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"savanna": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:savanna"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"savanna"
+		]
+	]
+}

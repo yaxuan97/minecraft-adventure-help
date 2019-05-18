@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/jungle",
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo"
+		},
+		"title": "竹林",
+		"description": "竹林(Bamboo Jungle)大面积生成在通常的丛林中。竹林里的树木远不如丛林浓密，但竹林拥有数不尽的竹子横穿其中。熊猫会在这里生成",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"bamboo_jungle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:bamboo_jungle"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"bamboo_jungle"
+		]
+	]
+}

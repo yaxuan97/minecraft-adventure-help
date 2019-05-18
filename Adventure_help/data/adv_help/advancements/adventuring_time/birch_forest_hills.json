@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/birch_forest",
+	"display": {
+		"icon": {
+			"item": "minecraft:birch_leaves"
+		},
+		"title": "桦木森林丘陵",
+		"description": "桦木森林丘陵(Birch Forest Hills)类似于其他丘陵生物群系，以更高更崎岖的地形为特点，其他方面如同普通的桦木森林一样",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"birch_forest_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:birch_forest_hills"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"birch_forest_hills"
+		]
+	]
+}

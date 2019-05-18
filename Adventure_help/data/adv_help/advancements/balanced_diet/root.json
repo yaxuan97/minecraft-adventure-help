@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bowl"
+        },
+        "title": "进度帮助：均衡饮食",
+        "description": "帮助您完成进度：均衡饮食！",
+        "background": "minecraft:textures/gui/advancements/backgrounds/end.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+    "criteria": {
+        "bd_help_start": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {}
+        }
+	},
+	"requirements": [
+		[
+			"bd_help_start"
+		]
+	]
+}

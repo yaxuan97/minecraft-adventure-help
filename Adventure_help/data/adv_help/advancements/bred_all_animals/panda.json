@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:bred_all_animals/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:panda_spawn_egg"
+		},
+		"title": "繁殖所有动物：熊猫",
+		"description": "繁殖熊猫",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"panda": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:panda"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"panda"
+		]
+	]
+}

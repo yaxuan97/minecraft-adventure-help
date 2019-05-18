@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:dark_oak_log"
+		},
+		"title": "黑森林",
+		"description": "黑森林(dark_forest)的树木非常密集，遮天蔽日。这是唯一自然生成深色橡木的生物群系。巨型蘑菇会在这里生成",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"dark_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:dark_forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"dark_forest"
+		]
+	]
+}

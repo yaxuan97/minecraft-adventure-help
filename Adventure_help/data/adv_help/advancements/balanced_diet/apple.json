@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:apple"
+		},
+		"title": "苹果",
+		"description": "吃下一个苹果",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:apple"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"apple"
+		]
+	]
+}

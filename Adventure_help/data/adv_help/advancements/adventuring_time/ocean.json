@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:kelp"
+		},
+		"title": "海洋",
+		"description": "海洋是水的广阔区域，从海平面一直延伸到海底。[此进度只做分类用途，不计入总进度]",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:ocean"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"ocean"
+		]
+	]
+}

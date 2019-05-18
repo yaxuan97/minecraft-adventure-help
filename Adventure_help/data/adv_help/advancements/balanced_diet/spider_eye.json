@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:spider_eye"
+		},
+		"title": "蜘蛛眼",
+		"description": "吃下一个蜘蛛眼",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"spider_eye": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:spider_eye"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"spider_eye"
+		]
+	]
+}

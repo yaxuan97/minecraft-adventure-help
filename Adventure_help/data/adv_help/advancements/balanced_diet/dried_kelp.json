@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:dried_kelp"
+		},
+		"title": "干海带",
+		"description": "吃下一个干海带",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"dried_kelp": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:dried_kelp"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"dried_kelp"
+		]
+	]
+}

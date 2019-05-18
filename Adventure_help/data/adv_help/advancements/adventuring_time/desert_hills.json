@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/desert",
+	"display": {
+		"icon": {
+			"item": "minecraft:sand"
+		},
+		"title": "沙漠丘陵",
+		"description": "沙漠丘陵(Desert Hills)具有较高的地形，主要由沙和砂岩组成，就像其他沙漠一样",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"desert_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:desert_hills"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"desert_hills"
+		]
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:potato"
+		},
+		"title": "马铃薯",
+		"description": "吃下一个马铃薯",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"potato": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:potato"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"potato"
+		]
+	]
+}

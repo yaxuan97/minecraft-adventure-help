@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/jungle",
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_leaves"
+		},
+		"title": "丛林丘陵",
+		"description": "丛林丘陵(Jungle Hills)与丛林类似，但地形较为陡峭",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"jungle_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:jungle_hills"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"jungle_hills"
+		]
+	]
+}

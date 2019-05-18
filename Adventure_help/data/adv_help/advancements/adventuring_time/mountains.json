@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:stone"
+		},
+		"title": "山地",
+		"description": "山地生物群系的地形陡峭，并且比其他生物群系都要高。表面主要由草和石头制成，一些橡树和云杉偶尔生长在零零星星的地方",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mountains"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mountains"
+		]
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_boots"
+		},
+		"title": "进度帮助：探索的时光",
+		"description": "帮助您完成进度：探索的时光！(生物群系介绍来自 中文Minecraft wiki)",
+		"background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"adventure": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [
+		[
+			"adventure"
+		]
+	]
+}

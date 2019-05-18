@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/river",
+	"display": {
+		"icon": {
+			"item": "minecraft:ice"
+		},
+		"title": "冻河",
+		"description": "冻河(Frozen River)类似河流，但表面全部都被冰结了",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"frozen_river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:frozen_river"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"frozen_river"
+		]
+	]
+}

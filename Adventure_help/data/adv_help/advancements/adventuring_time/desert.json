@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:dead_bush"
+		},
+		"title": "沙漠",
+		"description": "沙漠(desert)通常是巨大的，地形平坦，表面完全由沙子制成。在晚上，在沙漠中生成的大多数僵尸和变种被尸壳取代",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"desert": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:desert"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"desert"
+		]
+	]
+}

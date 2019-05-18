@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:kill_all_mobs/skeleton",
+	"display": {
+	  "icon": {
+		"item": "minecraft:stray_spawn_egg"
+	  },
+	  "title": "怪物狩猎：流浪者",
+	  "description": "杀死一只流浪者",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"criteria": {
+	  "stray": {
+		"trigger": "minecraft:player_killed_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:stray"
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"stray"
+	  ]
+	]
+  }

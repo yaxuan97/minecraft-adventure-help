@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:kill_all_mobs/root",
+	"display": {
+	  "icon": {
+		"item": "minecraft:guardian_spawn_egg"
+	  },
+	  "title": "怪物狩猎：守卫者",
+	  "description": "杀死一只守卫者",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"criteria": {
+	  "guardian": {
+		"trigger": "minecraft:player_killed_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:guardian"
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"guardian"
+	  ]
+	]
+  }

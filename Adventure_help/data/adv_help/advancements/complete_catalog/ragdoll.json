@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:complete_catalog/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cat_spawn_egg"
+		},
+		"title": "布偶猫",
+		"description": "驯养一只布偶猫",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"ragdoll": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"catType": "minecraft:textures/entity/cat/ragdoll.png"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"ragdoll"
+		]
+	]
+}

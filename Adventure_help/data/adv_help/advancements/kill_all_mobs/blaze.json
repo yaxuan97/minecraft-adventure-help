@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:kill_all_mobs/root",
+	"display": {
+	  "icon": {
+		"item": "minecraft:blaze_spawn_egg"
+	  },
+	  "title": "怪物狩猎：烈焰人",
+	  "description": "杀死一只烈焰人",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"criteria": {
+	  "blaze": {
+		"trigger": "minecraft:player_killed_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:blaze"
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"blaze"
+	  ]
+	]
+  }

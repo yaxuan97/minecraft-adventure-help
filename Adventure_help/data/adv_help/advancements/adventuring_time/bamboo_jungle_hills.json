@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/bamboo_jungle",
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo"
+		},
+		"title": "竹林丘陵",
+		"description": "竹林丘陵(Bamboo Jungle Hills)与竹林相似，只是拥有更陡峭的地形",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"bamboo_jungle_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:bamboo_jungle_hills"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"bamboo_jungle_hills"
+		]
+	]
+}

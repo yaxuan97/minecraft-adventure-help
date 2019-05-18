@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_log"
+		},
+		"title": "丛林",
+		"description": "丛林(jungle)是一个森林茂密的生物群系。2x2的丛林树生长得非常高，甚至可能超过30米",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"jungle": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:jungle"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"jungle"
+		]
+	]
+}

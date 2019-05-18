@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:bred_all_animals/cow",
+	"display": {
+		"icon": {
+			"item": "minecraft:mooshroom_spawn_egg"
+		},
+		"title": "繁殖所有动物：哞菇",
+		"description": "繁殖哞菇",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mooshroom": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:mooshroom"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mooshroom"
+		]
+	]
+}

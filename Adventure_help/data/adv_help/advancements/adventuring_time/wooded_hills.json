@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/forest",
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_leaves"
+		},
+		"title": "繁茂的丘陵",
+		"description": "繁茂的丘陵(Wooded Hills)类似于普通的森林。这里的地形要高一些、崎岖一些",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"wooded_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:wooded_hills"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"wooded_hills"
+		]
+	]
+}

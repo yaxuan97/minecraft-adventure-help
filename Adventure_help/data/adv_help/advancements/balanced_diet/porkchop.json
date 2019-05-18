@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:porkchop"
+		},
+		"title": "生猪肉",
+		"description": "吃下一个生猪肉",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"porkchop": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:porkchop"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"porkchop"
+		]
+	]
+}

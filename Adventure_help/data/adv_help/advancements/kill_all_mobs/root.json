@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "title": "进度帮助：怪物狩猎完成",
+        "description": "帮助您完成进度：怪物狩猎完成！",
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+    "criteria": {
+        "kam_help_start": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {}
+        }
+	},
+	"requirements": [
+		[
+			"kam_help_start"
+		]
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/mushroom_fields",
+	"display": {
+		"icon": {
+			"item": "minecraft:red_mushroom"
+		},
+		"title": "蘑菇岛岸",
+		"description": "蘑菇岛岸(Mushroom Field Shore)是蘑菇岛的海岸和河流",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mushroom_field_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mushroom_field_shore"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mushroom_field_shore"
+		]
+	]
+}

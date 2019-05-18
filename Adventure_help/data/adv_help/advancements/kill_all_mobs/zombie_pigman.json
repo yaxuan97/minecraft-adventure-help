@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:kill_all_mobs/zombie",
+	"display": {
+	  "icon": {
+		"item": "minecraft:zombie_pigman_spawn_egg"
+	  },
+	  "title": "怪物狩猎：僵尸猪人",
+	  "description": "杀死一只僵尸猪人",
+	  "frame": "goal",
+	  "show_toast": true,
+	  "announce_to_chat": true,
+	  "hidden": false
+	},
+	"criteria": {
+	  "zombie_pigman": {
+		"trigger": "minecraft:player_killed_entity",
+		"conditions": {
+		  "entity": {
+			"type": "minecraft:zombie_pigman"
+		  }
+		}
+	  }
+	},
+	"requirements": [
+	  [
+		"zombie_pigman"
+	  ]
+	]
+  }

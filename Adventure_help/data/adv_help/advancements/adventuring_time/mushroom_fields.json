@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:red_mushroom_block"
+		},
+		"title": "蘑菇岛",
+		"description": "蘑菇岛(Mushroom Field)蘑菇岛生物群系通常是被大海包围的小岛，表面有菌丝而不是草。大量的棕色和红色蘑菇覆盖菌丝。除了哞菇之外没有其他生物在这个生物群系中自然生成，包括通常夜间生成的敌对生物",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mushroom_fields": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mushroom_fields"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mushroom_fields"
+		]
+	]
+}

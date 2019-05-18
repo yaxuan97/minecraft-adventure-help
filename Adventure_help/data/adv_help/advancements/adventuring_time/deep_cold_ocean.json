@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/cold_ocean",
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title": "冷水深海",
+		"description": "冷水深海(Deep Cold Ocean)类似于冷水海洋，但深度是其两倍。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"deep_cold_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:deep_cold_ocean"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"deep_cold_ocean"
+		]
+	]
+}

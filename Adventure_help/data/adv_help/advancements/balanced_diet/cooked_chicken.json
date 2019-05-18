@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/chicken",
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_chicken"
+		},
+		"title": "熟鸡肉",
+		"description": "吃下一个熟鸡肉",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"cooked_chicken": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:cooked_chicken"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"cooked_chicken"
+		]
+	]
+}

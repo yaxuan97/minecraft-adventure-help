@@ -1,0 +1,27 @@
+{
+	"parent": "adv_help:adventuring_time/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:birch_log"
+		},
+		"title": "桦木森林",
+		"description": "桦木森林(Birch Forest)的一大特点是有大量的桦树",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"birch_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:birch_forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"birch_forest"
+		]
+	]
+}

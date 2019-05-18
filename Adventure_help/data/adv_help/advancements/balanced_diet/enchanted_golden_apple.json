@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:balanced_diet/golden_apple",
+	"display": {
+		"icon": {
+			"item": "minecraft:enchanted_golden_apple"
+		},
+		"title": "神",
+		"description": "吃下一个附魔金苹果",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"enchanted_golden_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:enchanted_golden_apple"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"enchanted_golden_apple"
+		]
+	]
+}

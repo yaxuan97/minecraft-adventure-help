@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:complete_catalog/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cat_spawn_egg"
+		},
+		"title": "英国短毛猫",
+		"description": "驯养一只英国短毛猫",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"british_shorthair": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"catType": "minecraft:textures/entity/cat/british_shorthair.png"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"british_shorthair"
+		]
+	]
+}
