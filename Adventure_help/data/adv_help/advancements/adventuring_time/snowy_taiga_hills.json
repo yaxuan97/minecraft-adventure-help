@@ -2,7 +2,7 @@
 	"parent": "adv_help:adventuring_time/snowy_taiga",
 	"display": {
 		"icon": {
-			"item": "minecraft:spruce_logs"
+			"item": "minecraft:spruce_log"
 		},
 		"title": "积雪的针叶林丘陵",
 		"description": "积雪的针叶林丘陵（Snowy Taiga Hills）与积雪针叶林相比更为多山，地形更加不规则",

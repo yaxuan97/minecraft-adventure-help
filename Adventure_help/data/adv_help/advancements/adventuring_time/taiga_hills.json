@@ -2,7 +2,7 @@
 	"parent": "adv_help:adventuring_time/taiga",
 	"display": {
 		"icon": {
-			"item": "minecraft:spruce_logs"
+			"item": "minecraft:spruce_log"
 		},
 		"title": "针叶林丘陵",
 		"description": "针叶林丘陵(Taiga Hills)与基础的针叶林相比，地形更陡峭",
