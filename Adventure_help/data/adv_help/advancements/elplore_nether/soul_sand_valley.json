@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:elplore_nether/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:soul_soil"
+		},
+		"title": "灵魂沙峡谷",
+		"description": "灵魂沙峡谷(Soul Sand Valley)的特征是广阔的熔岩海与高耸的玄武岩柱。群系本身由灵魂沙和灵魂土构成，其上分布着零星的灵魂火和下界化石。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"soul_sand_valley": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"location": {
+					"biome": "minecraft:soul_sand_valley"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"soul_sand_valley"
+		]
+	]
+}

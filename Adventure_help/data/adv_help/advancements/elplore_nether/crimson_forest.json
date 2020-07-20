@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:elplore_nether/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:crimson_nylium"
+		},
+		"title": "绯红森林",
+		"description": "绯红森林(Crimson Forest)是一种深红色调的生物群系。这里的迷雾和颗粒呈明亮的红色色调。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"crimson_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"location": {
+					"biome": "minecraft:crimson_forest"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crimson_forest"
+		]
+	]
+}

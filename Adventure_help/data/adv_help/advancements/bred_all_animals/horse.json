@@ -15,9 +15,15 @@
 		"horse": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:horse"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:horse"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},

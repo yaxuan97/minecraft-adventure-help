@@ -1,25 +1,25 @@
 {
-	"parent": "adv_help:kill_all_mobs/root",
+	"parent": "adv_help:bred_all_animals/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:pillager_spawn_egg"
+			"item": "minecraft:bee_spawn_egg"
 		},
-		"title": "怪物狩猎：掠夺者",
-		"description": "杀死一只掠夺者",
+		"title": "繁殖所有动物：蜜蜂",
+		"description": "繁殖蜜蜂",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria": {
-		"pillager": {
-			"trigger": "minecraft:player_killed_entity",
+		"bee": {
+			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"entity": [
+				"child": [
 					{
 						"condition": "minecraft:entity_properties",
 						"predicate": {
-							"type": "minecraft:pillager"
+							"type": "minecraft:bee"
 						},
 						"entity": "this"
 					}
@@ -29,7 +29,7 @@
 	},
 	"requirements": [
 		[
-			"pillager"
+			"bee"
 		]
 	]
 }

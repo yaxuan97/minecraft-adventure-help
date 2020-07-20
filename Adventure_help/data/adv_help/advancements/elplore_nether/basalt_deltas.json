@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:elplore_nether/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:basalt"
+		},
+		"title": "玄武岩三角洲",
+		"description": "玄武岩三角洲(Basalt Deltas)是下界中的一个锯齿状的、类似洞穴的生物群系。该生物群系主要由柱状玄武岩和黑石山脉组成。整个生物群系都可以发现参差不齐的玄武岩石柱林，其中有一些会生成在熔岩海中。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"basalt_deltas": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"location": {
+					"biome": "minecraft:basalt_deltas"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"basalt_deltas"
+		]
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:elplore_nether/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:netherrack"
+		},
+		"title": "下界荒地",
+		"description": "下界荒地(Nether Wastes)由下界岩、大面积的熔岩湖和少量荧石堆、下界石英矿石和下界金矿石组成。远古残骸也会在埋藏在地下。恶魂、僵尸猪灵、岩浆怪、末影人、炽足兽和猪灵可在此生成，下界要塞和堡垒遗迹和也会在此出现。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"nether_wastes": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"location": {
+					"biome": "minecraft:nether_wastes"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"nether_wastes"
+		]
+	]
+}

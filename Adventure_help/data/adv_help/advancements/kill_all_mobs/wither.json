@@ -1,25 +1,25 @@
 {
-	"parent": "adv_help:kill_all_mobs/zombie",
+	"parent": "adv_help:kill_all_mobs/wither_skeleton",
 	"display": {
 		"icon": {
-			"item": "minecraft:zombie_villager_spawn_egg"
+			"item": "minecraft:wither_skeleton_skull"
 		},
-		"title": "怪物狩猎：僵尸村民",
-		"description": "杀死一只僵尸村民",
+		"title": "怪物狩猎：凋灵",
+		"description": "杀死一只凋灵",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria": {
-		"zombie_villager": {
+		"wither": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": [
 					{
 						"condition": "minecraft:entity_properties",
 						"predicate": {
-							"type": "minecraft:zombie_villager"
+							"type": "minecraft:wither"
 						},
 						"entity": "this"
 					}
@@ -29,7 +29,7 @@
 	},
 	"requirements": [
 		[
-			"zombie_villager"
+			"wither"
 		]
 	]
 }

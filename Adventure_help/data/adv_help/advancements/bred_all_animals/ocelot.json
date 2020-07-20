@@ -15,9 +15,15 @@
 		"ocelot": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:ocelot"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:ocelot"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},

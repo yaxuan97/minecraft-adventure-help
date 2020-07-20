@@ -1,0 +1,29 @@
+{
+	"parent": "adv_help:elplore_nether/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:warped_nylium"
+		},
+		"title": "诡异森林",
+		"description": "诡异森林(Warped forest)是一种深蓝色调的生物群系。这里的迷雾和颗粒呈深蓝/紫色色调，如果玩家拥有夜视效果，迷雾和颗粒会呈现出品红色。",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"warped_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"location": {
+					"biome": "minecraft:warped_forest"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"warped_forest"
+		]
+	]
+}

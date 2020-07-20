@@ -15,9 +15,15 @@
 		"cat": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:cat"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:cat"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},

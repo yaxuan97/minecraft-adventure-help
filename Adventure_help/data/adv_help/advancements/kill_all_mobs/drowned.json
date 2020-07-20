@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/zombie",
 	"display": {
-	  "icon": {
-		"item": "minecraft:drowned_spawn_egg"
-	  },
-	  "title": "怪物狩猎：溺尸",
-	  "description": "杀死一只溺尸",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:drowned_spawn_egg"
+		},
+		"title": "怪物狩猎：溺尸",
+		"description": "杀死一只溺尸",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "drowned": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:drowned"
-		  }
+		"drowned": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:drowned"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"drowned"
-	  ]
+		[
+			"drowned"
+		]
 	]
-  }
+}

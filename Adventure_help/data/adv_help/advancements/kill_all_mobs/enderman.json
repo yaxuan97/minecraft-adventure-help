@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/root",
 	"display": {
-	  "icon": {
-		"item": "minecraft:enderman_spawn_egg"
-	  },
-	  "title": "怪物狩猎：末影人",
-	  "description": "杀死一只末影人",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:enderman_spawn_egg"
+		},
+		"title": "怪物狩猎：末影人",
+		"description": "杀死一只末影人",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "enderman": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:enderman"
-		  }
+		"enderman": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:enderman"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"enderman"
-	  ]
+		[
+			"enderman"
+		]
 	]
-  }
+}

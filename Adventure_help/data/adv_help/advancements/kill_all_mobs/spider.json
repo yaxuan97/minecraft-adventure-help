@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/root",
 	"display": {
-	  "icon": {
-		"item": "minecraft:spider_spawn_egg"
-	  },
-	  "title": "怪物狩猎：蜘蛛",
-	  "description": "杀死一只蜘蛛",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:spider_spawn_egg"
+		},
+		"title": "怪物狩猎：蜘蛛",
+		"description": "杀死一只蜘蛛",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "spider": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:spider"
-		  }
+		"spider": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:spider"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"spider"
-	  ]
+		[
+			"spider"
+		]
 	]
-  }
+}

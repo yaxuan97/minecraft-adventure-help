@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/root",
 	"display": {
-	  "icon": {
-		"item": "minecraft:slime_spawn_egg"
-	  },
-	  "title": "怪物狩猎：史莱姆",
-	  "description": "杀死一只史莱姆",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:slime_spawn_egg"
+		},
+		"title": "怪物狩猎：史莱姆",
+		"description": "杀死一只史莱姆",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "slime": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:slime"
-		  }
+		"slime": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:slime"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"slime"
-	  ]
+		[
+			"slime"
+		]
 	]
-  }
+}

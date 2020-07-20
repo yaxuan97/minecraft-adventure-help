@@ -15,9 +15,15 @@
 		"mooshroom": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:mooshroom"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:mooshroom"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},

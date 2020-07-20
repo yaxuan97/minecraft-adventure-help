@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/pillager",
 	"display": {
-	  "icon": {
-		"item": "minecraft:vindicator_spawn_egg"
-	  },
-	  "title": "怪物狩猎：卫道士",
-	  "description": "杀死一只卫道士",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:vindicator_spawn_egg"
+		},
+		"title": "怪物狩猎：卫道士",
+		"description": "杀死一只卫道士",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "vindicator": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:vindicator"
-		  }
+		"vindicator": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:vindicator"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"vindicator"
-	  ]
+		[
+			"vindicator"
+		]
 	]
-  }
+}

@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/spider",
 	"display": {
-	  "icon": {
-		"item": "minecraft:cave_spider_spawn_egg"
-	  },
-	  "title": "怪物狩猎：洞穴蜘蛛",
-	  "description": "杀死一只洞穴蜘蛛",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:cave_spider_spawn_egg"
+		},
+		"title": "怪物狩猎：洞穴蜘蛛",
+		"description": "杀死一只洞穴蜘蛛",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "cave_spider": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:cave_spider"
-		  }
+		"cave_spider": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:cave_spider"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"cave_spider"
-	  ]
+		[
+			"cave_spider"
+		]
 	]
-  }
+}

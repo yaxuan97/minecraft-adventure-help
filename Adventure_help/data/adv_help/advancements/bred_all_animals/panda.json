@@ -15,9 +15,15 @@
 		"panda": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:panda"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:panda"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},

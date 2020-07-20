@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/evoker",
 	"display": {
-	  "icon": {
-		"item": "minecraft:ravager_spawn_egg"
-	  },
-	  "title": "怪物狩猎：劫掠兽",
-	  "description": "杀死一只劫掠兽",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:ravager_spawn_egg"
+		},
+		"title": "怪物狩猎：劫掠兽",
+		"description": "杀死一只劫掠兽",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "ravager": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:ravager"
-		  }
+		"ravager": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:ravager"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"ravager"
-	  ]
+		[
+			"ravager"
+		]
 	]
-  }
+}

@@ -1,29 +1,35 @@
 {
 	"parent": "adv_help:kill_all_mobs/vindicator",
 	"display": {
-	  "icon": {
-		"item": "minecraft:evoker_spawn_egg"
-	  },
-	  "title": "怪物狩猎：唤魔者",
-	  "description": "杀死一只唤魔者",
-	  "frame": "goal",
-	  "show_toast": true,
-	  "announce_to_chat": true,
-	  "hidden": false
+		"icon": {
+			"item": "minecraft:evoker_spawn_egg"
+		},
+		"title": "怪物狩猎：唤魔者",
+		"description": "杀死一只唤魔者",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
 	},
 	"criteria": {
-	  "evoker": {
-		"trigger": "minecraft:player_killed_entity",
-		"conditions": {
-		  "entity": {
-			"type": "minecraft:evoker"
-		  }
+		"evoker": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:evoker"
+						},
+						"entity": "this"
+					}
+				]
+			}
 		}
-	  }
 	},
 	"requirements": [
-	  [
-		"evoker"
-	  ]
+		[
+			"evoker"
+		]
 	]
-  }
+}

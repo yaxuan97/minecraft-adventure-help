@@ -15,9 +15,15 @@
 		"llama": {
 			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"parent": {
-					"type": "minecraft:llama"
-				}
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:llama"
+						},
+						"entity": "this"
+					}
+				]
 			}
 		}
 	},
