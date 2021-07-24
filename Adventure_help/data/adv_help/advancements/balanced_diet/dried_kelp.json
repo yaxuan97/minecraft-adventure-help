@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:dried_kelp"
+					"items": [
+						"minecraft:dried_kelp"
+					]
 				}
 			}
 		}

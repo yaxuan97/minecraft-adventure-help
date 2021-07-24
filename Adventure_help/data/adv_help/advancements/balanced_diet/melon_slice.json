@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:melon_slice"
+					"items": [
+						"minecraft:melon_slice"
+					]
 				}
 			}
 		}

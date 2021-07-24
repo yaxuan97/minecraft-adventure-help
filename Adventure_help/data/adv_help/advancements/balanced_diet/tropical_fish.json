@@ -2,28 +2,30 @@
 	"parent": "adv_help:balanced_diet/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:salmon"
+			"item": "minecraft:tropical_fish"
 		},
-		"title": "小丑鱼",
-		"description": "吃下一个小丑鱼",
+		"title": "热带鱼",
+		"description": "吃下一个热带鱼",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria": {
-		"salmon": {
+		"tropical_fish": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:salmon"
+					"items": [
+						"minecraft:tropical_fish"
+					]
 				}
 			}
 		}
 	},
 	"requirements": [
 		[
-			"salmon"
+			"tropical_fish"
 		]
 	]
 }

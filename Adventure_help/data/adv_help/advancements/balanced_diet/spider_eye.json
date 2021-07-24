@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:spider_eye"
+					"items": [
+						"minecraft:spider_eye"
+					]
 				}
 			}
 		}

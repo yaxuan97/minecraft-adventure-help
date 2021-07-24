@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:sweet_berries"
+					"items": [
+						"minecraft:sweet_berries"
+					]
 				}
 			}
 		}

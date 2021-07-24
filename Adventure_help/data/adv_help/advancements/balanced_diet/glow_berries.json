@@ -2,22 +2,22 @@
 	"parent": "adv_help:balanced_diet/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:pufferfish"
+			"item": "minecraft:glow_berries"
 		},
-		"title": "河豚",
-		"description": "吃下一个河豚",
+		"title": "发光浆果",
+		"description": "吃下一个发光浆果",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria": {
-		"pufferfish": {
+		"glow_berries": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:pufferfish"
+						"minecraft:glow_berries"
 					]
 				}
 			}
@@ -25,7 +25,7 @@
 	},
 	"requirements": [
 		[
-			"pufferfish"
+			"glow_berries"
 		]
 	]
 }

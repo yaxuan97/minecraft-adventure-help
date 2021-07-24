@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:cooked_salmon"
+					"items": [
+						"minecraft:cooked_salmon"
+					]
 				}
 			}
 		}

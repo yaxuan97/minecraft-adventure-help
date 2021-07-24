@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:carrot"
+					"items": [
+						"minecraft:carrot"
+					]
 				}
 			}
 		}

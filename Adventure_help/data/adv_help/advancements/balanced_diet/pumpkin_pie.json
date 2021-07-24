@@ -16,7 +16,9 @@
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:pumpkin_pie"
+					"items": [
+						"minecraft:pumpkin_pie"
+					]
 				}
 			}
 		}
